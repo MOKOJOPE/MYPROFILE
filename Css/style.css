@@ -123,7 +123,7 @@ nav ul li a {
 .about-content h2 {
   font-size: 55px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .about-content p {
@@ -155,7 +155,7 @@ nav ul li a {
 .skills-content h2 {
   font-size: 55px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 900;
   padding: 20px;
 }
 
@@ -189,8 +189,15 @@ nav ul li a {
 
 .skill-item figcaption {
   margin-top: 10px; /* Space between image and caption */
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   color: #fff;
+}
+
+.develop-content h2 {
+  font-size: 55px;
+  color: #fff;
+  font-weight: 900;
 }
 
 @media (max-aspect-ratio: 16/9) {
