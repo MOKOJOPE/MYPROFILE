@@ -17,9 +17,8 @@
         </video>
       </div>
 
-      <nav id="Home" id="Top" class="nav">
+      <nav id="navbar" class="nav">
         <img src="/Image/letter-m2.png" alt="logo" class="logo" />
-
         <ul>
           <li><a href="#Home">Home</a></li>
           <li><a href="#About">About</a></li>
@@ -30,7 +29,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main id="Home" class="main">
       <div class="welcome-content">
         <h1>Welcome to My Profile</h1>
         <p>by Lok Yiu Chan</p>
@@ -225,11 +224,23 @@
         <img src="/Image/Github.png" alt="Picture of Github" />
         <a href="https://github.com/MOKOJOPE">Github</a>
         <br />
-        <!-- Make the Top button and put it in the right side -->
-        <a href="#Top">Go back to the Top!</a>
         <footer>&copy;2024 Lok Yiu Chan</footer>
       </div>
     </footer>
     <script src="/scripts/script.js"></script>
+    <script type="text/javascript">
+      var lastScrollTop = 0;
+      var navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-120px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
   </body>
 </html>
