@@ -131,7 +131,7 @@ nav ul li a {
   color: #fff;
   text-align: center;
   width: 100%;
-  padding: 25vh;
+  padding: 10vh;
   grid-area: about-content;
 }
 
@@ -154,8 +154,8 @@ nav ul li a {
 
 .mypicture {
   border-radius: 20px;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
   display: left;
 }
 
@@ -165,16 +165,14 @@ nav ul li a {
   color: #fff;
   text-align: center;
   width: 100%;
-  /* padding: 25vh; */
+  padding: 10vh;
   grid-area: skills-content;
-  padding: 0;
 }
 
 .skills-content h2 {
   font-size: 55px;
   color: #fff;
   font-weight: 900;
-  padding: 20px;
 }
 
 .skills-content ul {
@@ -218,7 +216,7 @@ nav ul li a {
   color: #fff;
   text-align: center;
   width: 100%;
-  padding: 25vh;
+  padding: 10vh;
   grid-area: develop-content;
 }
 
@@ -226,7 +224,7 @@ nav ul li a {
   font-size: 55px;
   color: #fff;
   font-weight: 900;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .develop-content ul {
@@ -243,9 +241,56 @@ nav ul li a {
   color: #fff;
   text-align: center;
   width: 100%;
-  padding: 25vh;
+  padding: 14vh;
   grid-area: project-content;
 }
+
+.projects-content h2 {
+  font-size: 55px;
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.section {
+  display: flex;
+  column-gap: 20px;
+  margin: 50px;
+}
+
+.section-left {
+  width: 50%;
+  height: 50%;
+}
+.section-left img {
+  width: 90%;
+}
+
+.section-right {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.section-right h3 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.section-right p {
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
+  margin: 20px;
+  text-align: justify;
+  justify-content: center;
+}
+
 .contact-content {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);

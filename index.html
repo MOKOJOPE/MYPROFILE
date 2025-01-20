@@ -145,36 +145,41 @@
       <div id="Projects" class="projects-content">
         <h2>Projects</h2>
         <hr />
-        <div class="section-left">
-          <img src="/Image/Redesign1.png" alt="Picture of the webpage" />
+        <div class="section">
+          <div class="section-left">
+            <img src="/Image/Redesign1.png" alt="Picture of the webpage" />
+          </div>
+          <div class="section-right">
+            <h3>University Department Website Redesign</h3>
+            <p>
+              Collaboratively designed and implemented user-friendly website
+              interfaces for key departments such as Client Services and
+              International Student Services at Brigham Young University-Hawaii,
+              utilizing TeamDynamix in a dedicated team of two.
+            </p>
+            <a href="https://byuh.teamdynamix.com/TDClient/1902/Portal/Home/"
+              >Go Check it!</a
+            >
+          </div>
         </div>
-        <div class="section-right">
-          <h3>University Department Website Redesign</h3>
-          <p>
-            Collaboratively designed and implemented user-friendly website
-            interfaces for key departments such as Client Services and
-            International Student Services at Brigham Young University-Hawaii,
-            utilizing TeamDynamix in a dedicated team of two.
-          </p>
-          <a href="https://byuh.teamdynamix.com/TDClient/1902/Portal/Home/"
-            >Go Check it!</a
-          >
-        </div>
-        <div class="section-left left">
-          <img src="/Image/animal1.png" alt="Picture of the webpage" />
-          <img src="/Image/animal2.png" alt="Picture of the webpage" />
-        </div>
-        <div class="section-right right">
-          <h3>Kid-Friendly Interactive Website with AI-Enhanced Features</h3>
-          <p>
-            Implemented an AI-generated JavaScript game and a form page to
-            collect user feedback and opinions, using server-side processing to
-            store comment data.
-          </p>
-          <a
-            href="https://mokojope.github.io/Kid-Friendly-Interactive-Website-with-AI-Enhanced-Features/"
-            >Go Check it!</a
-          >
+        <hr />
+        <div class="section">
+          <div class="section-left left">
+            <img src="/Image/animal1.png" alt="Picture of the webpage" />
+            <img src="/Image/animal2.png" alt="Picture of the webpage" />
+          </div>
+          <div class="section-right right">
+            <h3>Kid-Friendly Interactive Website with AI-Enhanced Features</h3>
+            <p>
+              Implemented an AI-generated JavaScript game and a form page to
+              collect user feedback and opinions, using server-side processing
+              to store comment data.
+            </p>
+            <a
+              href="https://mokojope.github.io/Kid-Friendly-Interactive-Website-with-AI-Enhanced-Features/FinalProject/index.html"
+              >Go Check it!</a
+            >
+          </div>
         </div>
       </div>
 
@@ -236,6 +241,7 @@
           window.pageYOffset || document.documentElement.scrollTop;
         if (scrollTop > lastScrollTop) {
           navbar.style.top = "-120px";
+          navbar.style.backgroundColor = "Black";
         } else {
           navbar.style.top = "0";
         }
