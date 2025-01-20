@@ -11,8 +11,14 @@
     "header"
     "nav"
     "main"
-    "figure"
-    "footer";
+    "welcome-content"
+    "about-content"
+    "skills-content"
+    "develop-content"
+    "projects-content"
+    "contact-content"
+    "footer"
+    "footer-content";
 
   grid-template-columns: 1fr;
 
@@ -82,19 +88,14 @@ nav ul li a {
   overflow: hidden;
 }
 
-.welcome-content,
-.about-content,
-.skills-content,
-.develop-content,
-.projects-content,
-.contact-content,
-.footer-content {
+.welcome-content {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
   width: 100%;
   padding: 25vh;
+  grid-area: welcome-content;
 }
 
 .welcome-content h1 {
@@ -118,6 +119,16 @@ nav ul li a {
   padding: 14px 70px;
   border: radius 50px;
   margin-top: 20px;
+}
+
+.about-content {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 25vh;
+  grid-area: about-content;
 }
 
 .about-content h2 {
@@ -146,9 +157,12 @@ nav ul li a {
 
 .skills-content {
   bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
   width: 100%;
+  /* padding: 25vh; */
+  grid-area: skills-content;
   padding: 0;
 }
 
@@ -194,10 +208,70 @@ nav ul li a {
   color: #fff;
 }
 
+.develop-content {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 25vh;
+  grid-area: develop-content;
+}
+
 .develop-content h2 {
   font-size: 55px;
   color: #fff;
   font-weight: 900;
+  margin: 10px;
+}
+
+.develop-content ul {
+  list-style: none;
+  text-align: right;
+  justify-content: right;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.projects-content {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 25vh;
+  grid-area: project-content;
+}
+.contact-content {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 25vh;
+  grid-area: contact-content;
+}
+
+.contact-content h2 {
+  font-size: 55px;
+  color: #fff;
+  font-weight: 900;
+  margin: 10px;
+}
+
+.footer-content {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  /* padding: 25vh; */
+  margin-bottom: 20px;
+  grid-area: footer-content;
+}
+
+.footer-content a {
+  margin-bottom: 20px;
 }
 
 @media (max-aspect-ratio: 16/9) {
