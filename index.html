@@ -129,16 +129,28 @@
       <div id="Develop" class="develop-content">
         <h2>Game Development</h2>
         <hr />
-        <ul>
-          <li>Side Game</li>
-          <a href="https://mokojope.github.io/Slide-Game/">Go Check it!</a>
-          <li>David-Goliath Catch Game</li>
-          <a href="https://mokojope.github.io/David-Goliath-Game/"
-            >Go Check it!</a
-          >
-          <li>Snake Game</li>
-          <a href="https://mokojope.github.io/Snake-Game/">Go Check it!</a>
-        </ul>
+        <div class="section">
+          <div class="section-right">
+            <h3>Side Game</h3>
+            <a href="https://mokojope.github.io/Slide-Game/" target="_blank"
+              >Go Check it!</a
+            >
+          </div>
+          <div class="section-right">
+            <h3>David-Goliath Catch Game</h3>
+            <a
+              href="https://mokojope.github.io/David-Goliath-Game/"
+              target="_blank"
+              >Go Check it!</a
+            >
+          </div>
+          <div class="section-right">
+            <h3>Snake Game</h3>
+            <a href="https://mokojope.github.io/Snake-Game/" target="_blank"
+              >Go Check it!</a
+            >
+          </div>
+        </div>
       </div>
 
       <!-- Project Page -->
@@ -164,11 +176,36 @@
         </div>
         <hr />
         <div class="section">
-          <div class="section-left left">
-            <img src="/Image/animal1.png" alt="Picture of the webpage" />
-            <img src="/Image/animal2.png" alt="Picture of the webpage" />
+          <div class="section-left">
+            <div class="slider">
+              <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" />
+                <input type="radio" name="radio-btn" id="radio2" />
+                <input type="radio" name="radio-btn" id="radio3" />
+                <div class="slide first">
+                  <img src="/Image/animal1.png" alt="Picture of the webpage" />
+                </div>
+                <div class="slide">
+                  <img src="/Image/animal2.png" alt="Picture of the webpage" />
+                </div>
+                <div class="slide">
+                  <img src="/Image/animal3.png" alt="Picture of the webpage" />
+                </div>
+              </div>
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+              </div>
+            </div>
           </div>
-          <div class="section-right right">
+          <div class="section-right">
             <h3>Kid-Friendly Interactive Website with AI-Enhanced Features</h3>
             <p>
               Implemented an AI-generated JavaScript game and a form page to
@@ -181,6 +218,7 @@
             >
           </div>
         </div>
+        <hr />
       </div>
 
       <!-- Contact Page -->
@@ -223,11 +261,13 @@
       <div class="footer-content">
         <!-- Put a icon later -->
         <img src="/Image/Gmail.png" alt="Picture of Email" />
-        <a href="chanlokyiu326@gmail.com">Gmail</a>
+        <a href="mailto:chanlokyiu326@gmail.com" target="_blank">Gmail</a>
         <img src="/Image/Linkedin.png" alt="Picture of Linkedin" />
-        <a href="www.linkedin.com/in/momochan-hk">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/momochan-hk" target="_blank"
+          >LinkedIn</a
+        >
         <img src="/Image/Github.png" alt="Picture of Github" />
-        <a href="https://github.com/MOKOJOPE">Github</a>
+        <a href="https://github.com/MOKOJOPE" target="_blank">Github</a>
         <br />
         <footer>&copy;2024 Lok Yiu Chan</footer>
       </div>
@@ -242,11 +282,21 @@
         if (scrollTop > lastScrollTop) {
           navbar.style.top = "-120px";
           navbar.style.backgroundColor = "Black";
+          navbar.style.zIndex = 10;
         } else {
           navbar.style.top = "0";
         }
         lastScrollTop = scrollTop;
       });
+
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 3) {
+          counter = 1;
+        }
+      }, 5000);
     </script>
   </body>
 </html>
