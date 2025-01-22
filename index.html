@@ -224,52 +224,46 @@
       <!-- Contact Page -->
       <div class="contact-content">
         <h2 id="Contact">Contact</h2>
-        
-          <div
-            action="https://formspree.io/f/myzggkob"
-            method="POST"
-            id="registrationForm"
-          ><div class="section-contact">
-          <div class="left">
-            <label for="Name">Name:</label>
-          </div>
-          <div class="right">
-            <input type="text" id="username" name="Name" required />
-            <div class="feedback" id="usernameFeedback"></div>
-          </div>
-            <br />
+        <form
+          action="https://formspree.io/f/myzggkob"
+          method="POST"
+          id="registrationForm"
+        >
+          <div class="section-contact">
             <div class="left">
-            <label for="Email">Email Address:</label>
+              <label for="Name">Name:</label>
             </div>
             <div class="right">
-            <input type="email" id="email" name="Email" required />
-            <div class="feedback" id="emailFeedback"></div>
+              <input type="text" id="username" name="Name" required />
+              <div class="feedback" id="usernameFeedback"></div>
             </div>
-            <br />
+
             <div class="left">
-            <label for="Message">Your Message Here:</label>
+              <label for="Email">Email Address:</label>
             </div>
             <div class="right">
-            <textarea
-              name="Message"
-              id="comment"
-              cols="30"
-              rows="2"
-              placeholder="Make a Comment!"
-              required
-            ></textarea>
-            <div class="feedback" id="commentFeedback"></div>
+              <input type="email" id="email" name="Email" required />
+              <div class="feedback" id="emailFeedback"></div>
             </div>
-            <br />
+
+            <div class="left">
+              <label for="Message">Your Message Here:</label>
+            </div>
+            <div class="right">
+              <textarea
+                name="Message"
+                id="comment"
+                cols="30"
+                rows="2"
+                placeholder="Make a Comment!"
+                required
+              ></textarea>
+              <div class="feedback" id="commentFeedback"></div>
+            </div>
           </div>
-            <button>Sumbit</button>
-            <div
-              class="feedback valid-feedback"
-              id="registrationFeedback"
-            ></div>
-          </form>
-        
-        <br />
+          <button>Sumbit</button>
+          <div class="feedback valid-feedback" id="registrationFeedback"></div>
+        </form>
       </div>
     </main>
     <footer class="footer">
