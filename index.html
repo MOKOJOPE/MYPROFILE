@@ -224,36 +224,51 @@
       <!-- Contact Page -->
       <div class="contact-content">
         <h2 id="Contact">Contact</h2>
-        <form
-          action="https://formspree.io/f/myzggkob"
-          method="POST"
-          id="registrationForm"
-        >
-          <label for="Name">Name:</label>
-          <input type="text" id="username" name="Name" required />
-          <div class="feedback" id="usernameFeedback"></div>
-          <br />
-
-          <label for="Email">Email Address:</label>
-          <input type="email" id="email" name="Email" required />
-          <div class="feedback" id="emailFeedback"></div>
-          <br />
-
-          <label for="Message">Your Message Here:</label>
-          <textarea
-            name="Message"
-            id="comment"
-            cols="30"
-            rows="2"
-            placeholder="Make a Comment!"
-            required
-          ></textarea>
-          <div class="feedback" id="commentFeedback"></div>
-          <br />
-
-          <button>Sumbit</button>
-          <div class="feedback valid-feedback" id="registrationFeedback"></div>
-        </form>
+        
+          <div
+            action="https://formspree.io/f/myzggkob"
+            method="POST"
+            id="registrationForm"
+          ><div class="section-contact">
+          <div class="left">
+            <label for="Name">Name:</label>
+          </div>
+          <div class="right">
+            <input type="text" id="username" name="Name" required />
+            <div class="feedback" id="usernameFeedback"></div>
+          </div>
+            <br />
+            <div class="left">
+            <label for="Email">Email Address:</label>
+            </div>
+            <div class="right">
+            <input type="email" id="email" name="Email" required />
+            <div class="feedback" id="emailFeedback"></div>
+            </div>
+            <br />
+            <div class="left">
+            <label for="Message">Your Message Here:</label>
+            </div>
+            <div class="right">
+            <textarea
+              name="Message"
+              id="comment"
+              cols="30"
+              rows="2"
+              placeholder="Make a Comment!"
+              required
+            ></textarea>
+            <div class="feedback" id="commentFeedback"></div>
+            </div>
+            <br />
+          </div>
+            <button>Sumbit</button>
+            <div
+              class="feedback valid-feedback"
+              id="registrationFeedback"
+            ></div>
+          </form>
+        
         <br />
       </div>
     </main>
@@ -268,7 +283,7 @@
         >
         <img src="/Image/Github.png" alt="Picture of Github" />
         <a href="https://github.com/MOKOJOPE" target="_blank">Github</a>
-        <br />
+
         <footer>&copy;2024 Lok Yiu Chan</footer>
       </div>
     </footer>

@@ -393,7 +393,44 @@ nav ul li a {
   font-weight: 900;
   margin: 10px;
 }
-
+.section-contact {
+  display: inline-block;
+  column-gap: 20px;
+  margin: 40px 50px;
+  align-items: center;
+}
+.left {
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
+.left label {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  margin: 10px;
+}
+.right {
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
+.right input {
+  width: 500px;
+  height: 30px;
+}
+.right textarea {
+  width: 500px;
+  height: 80px;
+}
+button {
+  width: 100px;
+  height: 30px;
+  font-size: 25px;
+}
+footer {
+  margin-top: 20px;
+}
 .footer-content {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
