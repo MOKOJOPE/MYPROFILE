@@ -5,6 +5,7 @@ document
 
     var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
+    var comment = document.getElementById("comment").value;
 
     var usernameValid = /^[a-zA-Z0-9]{5,}$/.test(username); // Username should be at least 5 characters long and contain only letters and numbers
     var emailValid = /^[^@]+@\w+(\.\w+)+\w$/.test(email); // Simple email pattern check
@@ -26,12 +27,51 @@ document
     var formValid = usernameValid && emailValid;
 
     if (formValid) {
-      document.getElementById("registrationFeedback").textContent =
-        "It was submitted!";
-      document.getElementById("registrationFeedback").style.display = "block";
-      // Here you can also handle the form submission, e.g. send data to the server
+      // Submit form data to Formspree
+      fetch("https://formspree.io/f/xldgggbp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          Name: username,
+          Email: email,
+          Message: comment,
+        }),
+      })
+        .then((response) => {
+          if (response.ok) {
+            document.getElementById("registrationFeedback").textContent =
+              "Form submitted successfully!";
+            document.getElementById("registrationFeedback").style.display =
+              "block";
+          } else {
+            document.getElementById("registrationFeedback").textContent =
+              "Error submitting the form. Please try again.";
+            document.getElementById("registrationFeedback").style.display =
+              "block";
+          }
+        })
+        .catch((error) => {
+          document.getElementById("registrationFeedback").textContent =
+            "An error occurred. Please try again later.";
+          document.getElementById("registrationFeedback").style.display =
+            "block";
+          console.error("Error:", error);
+        });
     } else {
       document.getElementById("registrationFeedback").textContent = "";
       document.getElementById("registrationFeedback").style.display = "none";
     }
   });
+
+//   if (formValid) {
+//     document.getElementById("registrationFeedback").textContent =
+//       "It was submitted!";
+//     document.getElementById("registrationFeedback").style.display = "block";
+//     // Here you can also handle the form submission, e.g. send data to the server
+//   } else {
+//     document.getElementById("registrationFeedback").textContent = "";
+//     document.getElementById("registrationFeedback").style.display = "none";
+//   }
+// });
